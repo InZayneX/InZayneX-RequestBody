@@ -27,7 +27,7 @@ There are 2 methods defined in the `ObjectMapper` class that we will use:
 
 - `om.readValue()`: converts json strings to java objects
 
-- `om.writeValueAsString()`: converts java objects to json strings
+- `om.writeValueAsString()`: con verts java objectsto json strings
 
 ## Steps to retrieve data from a JSON String to a Java object
 
@@ -44,7 +44,7 @@ This is a good start, but we can utilize jackson to convert the request body int
 
 ```java
 app.post("/user", ctx -> {
-    //retrieve the json string from the request body
+    //retrieve the json string from the request body 
     String jsonString = ctx.body();
 
     //utilize jackson to convert the json string to a user object
